@@ -9,6 +9,20 @@
 
 Golang generate password
 
+# Prerequisites
+
+I assume you have a clean Go installation, that includes `$GOPATH` defined:
+
+```bash
+# for macos
+echo $GOPATH
+/Users/<login>/go
+
+# for linux
+echo $GOPATH
+/home/<login>/go
+```
+
 # Build
 
 For Linux and MacOS only:
@@ -16,6 +30,9 @@ For Linux and MacOS only:
 ```bash
 # clone repository
 git clone git@github.com:bzhtux/go-genpassword.git
+
+# get dependancies
+go get ./...
 
 # build binary
 cd go-genpassword
@@ -53,3 +70,4 @@ docker run -ti --rm gen-password:1.0.0 -h
  -s		symbols' count (int)
 Example: gen_password -l 24 -n 6 -s 4
 ```
+
