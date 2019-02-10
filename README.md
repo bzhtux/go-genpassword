@@ -37,7 +37,7 @@ go get ./...
 # build binary
 cd go-genpassword
 go build -o gen_password
-sudo cp gen_password /usr/local/bin
+sudo cp gen_password /usr/local/bin/
 
 # test gen_password binary
 gen_password -h
